@@ -1,0 +1,33 @@
+import Styled from 'styled-components';
+
+export const Container = Styled.div`
+
+  background: #232129;
+  border-radius: 10px;
+  border: 2px solid #232129;
+  padding: 16px;
+  width: 100%;
+  color: #666360;
+  display: flex;
+  align-items:center;
+
+  & + div {
+      margin-top: 8px;
+  }
+
+  input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    color: #f4ede8;
+
+    &::placeholder {
+      color: #666360;
+    }
+
+  }
+
+  svg {
+    margin: 16px;
+  }
+`;
